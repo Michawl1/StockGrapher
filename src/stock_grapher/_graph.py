@@ -2,7 +2,15 @@ import seaborn as sns
 import csv
 
 
-def graph_spy():
+def graph_spy(csv_path):
+    """
+
+    :param csv_path: a path to a csv file that contains stock back data.
+                     data shall be formatted as a csv with the columns:
+                     <TICKER>,<PER>,<DATE>,<TIME>,<OPEN>,<HIGH>,<LOW>,<CLOSE>,<VOL>
+
+    :return:
+    """
     spy_data = None
 
     with open("../resources/US1.SPY15Min_DATA.csv") as spy:
