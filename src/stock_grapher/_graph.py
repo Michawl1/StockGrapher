@@ -1,4 +1,3 @@
-import seaborn as sns
 import csv
 
 
@@ -13,7 +12,7 @@ def graph_stock(csv_path):
     """
 
     with open(csv_path) as stock:
-        stock = csv.reader(stock, delimter=',')
+        stock = csv.reader(stock, delimiter=',')
 
     for line in stock:
         print(line)
